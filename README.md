@@ -15,3 +15,6 @@ L’infection par accompagnement de code est une méthode peu connue mais redout
 ## Explications de mon code : 
 Dans mon code nous exploitons la hiérarchisation des chemins de recherche d'exécutables pour les systèmes Linux, en exploitant la variable PATH, le dropper est une simple visionneuse d'image qui une fois exécutée modifiera l'environnement (variable PATH) sans modifier les cibles qui sont les commandes rpm et sudo.
 Mon code est très bien commenté afin que vous puissiez le comprendre le mieux possible.
+
+## Compilation :
+gcc viru2mdp.c -o imageview
