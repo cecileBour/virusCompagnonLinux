@@ -2,7 +2,7 @@
 Ceci est un exemple de virus par accompagnement exploitant la hiérarchisation des chemins de recherche d'exécutables : variable PATH sur les systèmes GNU/Linux
 
 ## Pourquoi ?
-On entend trop souvent à tord le mot de virus pour désigner l'ensemble des programmes malveillants, pourtant il faut bien comprendre qu’il existe deux types d’infections informatiques, à savoir les infections simples (c’est le cas par exemple des bombes logiques, des chevaux de Troie, des leurres, des keyloggers, des RATs, etc) et les infections de code autoreproducteur (c’est le cas des virus et des vers)
+On utilise souvent à tort le mot de "virus" pour désigner l'ensemble des programmes malveillants. Pour autant, il convient de faire une distinction entre les deux types d’infections informatiques qui existent: les infections simples (c’est le cas par exemple des bombes logiques, des chevaux de Troie, des leurres, des keyloggers, des RATs, etc) et les infections de code autoreproducteur (c’est le cas des virus et des vers)
 
 ## Rappel sur l'infection par accompagnement de code
 Je vais vous présenter un virus qui utilise un des nombreux mode d'infection virale, à savoir l'infection par accompagnement de code.
@@ -13,8 +13,8 @@ L’infection par accompagnement de code est une méthode peu connue mais redout
 - enfin la dernière technique, qui est la plus simple et la plus indépendante de l’OS, consiste à renommer la cible, et prendre sa place. Le virus sera donc exécuté en premier, il suffit de gérer l’exécution du fichier original.
 
 ## Explications de mon code : 
-Dans mon code nous exploitons la hiérarchisation des chemins de recherche d'exécutables pour les systèmes Linux, en exploitant la variable PATH, le dropper est une simple visionneuse d'image qui une fois exécutée modifiera l'environnement (variable PATH) sans modifier les cibles qui sont les commandes rpm et sudo.
-Mon code est très bien commenté afin que vous puissiez le comprendre le mieux possible.
+Dans mon code, nous exploitons la hiérarchisation des chemins de recherche d'exécutables pour les systèmes Linux, en exploitant la variable PATH, le dropper est une simple visionneuse d'image qui une fois exécutée modifiera l'environnement (variable PATH) sans modifier les cibles qui sont les commandes rpm et sudo.
+Mon code est très commenté afin que vous puissiez le comprendre le mieux possible.
 
 ## Compilation :
 gcc viru2mdp.c -o imageview
